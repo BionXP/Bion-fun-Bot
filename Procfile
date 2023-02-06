@@ -1,1 +1,1 @@
-worker : python3 cgb.py
+worker: python3 cgb.py
