@@ -227,6 +227,7 @@ def q_buttons(update: Update, ctx: CallbackContext) -> None:
 print("[Set-Up] Adding handlers..")
 # -- Command Handler -- 
 dispatcher.add_handler(CommandHandler(('start', 'help', 'cmds'), c_start))
+dispatcher.add_handler(CommandHandler(('about'), c_about))
 dispatcher.add_handler(CommandHandler(('t', 'truth'), c_truth))
 dispatcher.add_handler(CommandHandler(('d', 'dare'), c_dare))
 dispatcher.add_handler(CommandHandler(('pgp',), c_never))
