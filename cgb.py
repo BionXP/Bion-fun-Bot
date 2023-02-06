@@ -29,9 +29,9 @@ RED_BLUE_KEYBOARD = InlineKeyboardMarkup([[
 
 ## Info.
 print("=" * 25)
-print("Conversational Games Bot")
+print("Bion Fun Bot")
 print("=" * 25)
-print("1.0.0 | Release | By Alan", '\n')
+print("1.0.0 | Release | By Bion", '\n')
 
 ## Functions.
 def parse_list_file(file_path: str) -> list:
@@ -90,6 +90,24 @@ def c_about(update: Update, ctx: CallbackContext) -> None:
 		"@onlybionn"
 	)
 	ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))
+	
+## Help.	
+def c_help(update: Update, ctx: CallbackContext) -> None:
+		
+	text = (
+		"Silahkan pilih game yang ingin kamu ketahui cara bermainnya:",
+		"• ** TRUTH OR DARE **",
+		"Tekan -> /htod",
+		"Untuk mengetahui cara bermain truth or dare",
+		"• ** PERNAH GAK PERNAH **",
+		"Tekan -> /hpgp",
+		"Untuk mengetahui cara bermain pernah ga pernah",
+		"• ** INI ATAU ITU **",
+		"Tekan -> /hiai",
+		"Untuk mengetahui cara bermain ini atau itu"
+		"manage by @onlybionn",
+	)
+	ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))	
 	
 
 def c_truth(update: Update, ctx: CallbackContext) -> None:
