@@ -58,7 +58,7 @@ dispatcher = updater.dispatcher
 def c_start(update: Update, ctx: CallbackContext) -> None:
 	"""Info umum tentang bot dan perintah bantuan."""	
 	text = (
-		"*👋🏻 hallo ini adalah Fun Game Bot,Bot ini di buat sesimple mungkin agar mempermudah pemakaian anda/n",
+		"*👋🏻 hallo ini adalah Fun Game Bot,Bot ini di buat sesimple mungkin agar mempermudah pemakaian anda\n",
 		">> Daftar Permainan <<",
 		"• Truth or Dare (/truth, /dare)",
 		"• Pernah Gak Pernah (/pgp)",
@@ -79,14 +79,14 @@ def c_about(update: Update, ctx: CallbackContext) -> None:
 		"obrolan tetap aktif dan menyenangkan.",
 		"Tanggapan disimpan secara lokal dalam file .txt bot ini berjalan di PTB version 13.1",
 		"───── Dev di dalam Bot",
-		"Dev",:
-		"Bion: "@onlybion/n",
-		"contribution and special thanks:/n",
+		"Dev: ",
+		"Bion: @onlybion\n",
+		"contribution and special thanks:\n",
 		"• Rexa" :"@JustRex",
 		"• my friends"
 		"• Terimakasih untuk yang sudah menggunakan bot sederhana ini",
 		"───── Additional",
-		"Jika ingin berkontribusi atau ingin menambahkan pertanyaan silahkan hubungi owner bot ini:/n",
+		"Jika ingin berkontribusi atau ingin menambahkan pertanyaan silahkan hubungi owner bot ini:\n",
 		"@onlybionn"
 	)
 	ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))
