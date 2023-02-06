@@ -108,7 +108,56 @@ def c_help(update: Update, ctx: CallbackContext) -> None:
 		"manage by @onlybionn",
 	)
 	ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))	
+
+## HELP PERNAH GA PERNAH
+def c_hpgp(update: Update, ctx: CallbackContext) -> None:
+ """General info about the bot and command help."""
+ 
+ text = (
+         "❓ ᴄᴀʀᴀ ʙᴇʀᴍᴀɪɴ ᴘᴇʀɴᴀʜ ɢᴀ ᴘᴇʀɴᴀʜ",
+            "ɢᴀᴍᴇ ɪɴɪ ʜᴀᴍᴘɪʀ ᴍɪʀɪᴘ sᴇᴘᴇʀᴛɪ ᴛʀᴜᴛʜ ᴏʀ ᴅᴀʀᴇ",
+            "ᴋᴀᴍᴜ ʜᴀɴʏᴀ ᴅɪ ᴍɪɴᴛᴀ ᴜɴᴛᴜᴋ ᴍᴇɴᴊᴀᴡᴀʙ ᴘᴇʀɴᴀʜ ᴀᴛᴀᴜ ɢᴀᴋ ᴘᴇʀɴᴀʜ",
+
+            "ᴋᴀᴍᴜ ʙɪsᴀ ᴍᴇᴍᴀɪɴᴋᴀɴ ɢᴀᴍᴇɴʏᴀ ᴅᴇɴɢᴀɴ ᴍᴇɴɢᴇᴛɪᴋ :\n"
+
+            "➡️ /pgp\n",
+            "ʙᴇʀᴍᴀɪɴ ʙᴇʀsᴀᴍᴀ ᴛᴇᴍᴀɴ / ᴘᴀsᴀɴɢᴀɴ ʟᴇʙɪʜ ᴀsɪᴋ ᴅɪ ɢᴀᴍᴇ ɪɴɪ ᴇɴᴊᴏʏ",
+            "ᴍᴀɴᴀɢᴇ ʙʏ @onlybionn"
+           )
+      ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))
 	
+## HELP TOD
+def c_htod(update: Update, ctx: CallbackContext) -> None:
+"""General info about the bot and command help."""
+
+text = (
+         "❓ ᴄᴀʀᴀ ʙᴇʀᴍᴀɪɴ ᴛʀᴜᴛʜ ᴏʀ ᴅᴀʀᴇ sᴀᴍᴀ sᴇᴘᴇʀᴛɪ ᴛᴏᴅ ʟᴀɪɴɴʏᴀ",
+            "•ᴛʀᴜᴛʜ/ᴋᴇᴊᴜᴊᴜʀᴀɴ",
+               " ᴅᴇɴɢᴀɴ ᴍᴇɴɢᴇᴛɪᴋ: /truth\n",
+              "•ᴅᴀʀᴇ/ᴛᴀɴᴛᴀnɢᴀɴ",
+               " ᴅᴇɴɢᴀɴ ᴍᴇɴɢᴇᴛɪᴋ: /dare\n",
+            "ᴋᴀᴍᴜ ʙɪsᴀ ᴍᴇᴍᴀɪɴᴋᴀɴ ɢᴀᴍᴇɴʏᴀ ᴅᴇɴɢᴀɴ ᴍᴇɴɢᴇᴛɪᴋ :\n"
+            "ʙᴇʀᴍᴀɪɴ ʙᴇʀsᴀᴍᴀ ᴛᴇᴍᴀɴ / ᴘᴀsᴀɴɢᴀɴ ʟᴇʙɪʜ ᴀsɪᴋ ᴅɪ ɢᴀᴍᴇ ɪɴɪ ᴇɴᴊᴏʏ",
+            "ᴍᴀɴᴀɢᴇ ʙʏ @onlybionn"
+           )
+      ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))
+	
+## HELP INI ATAU ITU
+def c_hiai(update: Update, ctx: CallbackContext) -> None:
+ """General info about the bot and command help."""
+ 
+ text = (
+         "ɢᴀᴍᴇ ɪɴɪ ᴀᴛᴀᴜ ɪᴛᴜ ᴀᴅᴀʟᴀʜ sᴇʙᴜᴀʜ ɢᴀᴍᴇ ʏᴀɴɢ ᴅɪ ᴍᴀɪɴᴋᴀɴ ᴅᴜᴀ ᴀᴛᴀᴜ ʟᴇʙɪʜ",
+            "ᴘᴇᴍᴀɪɴ ʜᴀʀᴜs ᴍᴇᴍɪʟɪʜ ᴅᴜᴀ ᴏᴘsɪ ʏᴀɴɢ ᴅᴜ ʙᴇʀɪᴋᴀɴ ",
+            "ᴅᴀɴ ᴘᴇᴍᴀɪɴ  ʟᴀɪɴ ʜᴀʀᴜs ᴍᴇɴᴇʙᴀᴋ ᴘɪʟɪʜᴀɴ ʏᴀɴɢ ᴅɪ ᴘɪʟɪʜ.sᴇʟᴀɪɴ ɪᴛᴜ ᴀᴅᴀ ʙᴀɴʏᴀᴋ ᴄᴀʀᴀ ᴜɴᴛᴜᴋ ᴍᴇᴍᴀɪɴᴋᴀɴ ɢᴀᴍᴇ ɪɴɪ ᴀᴛᴀᴜ ɪᴛᴜ",
+
+            "ᴄᴀʀᴀ ʙᴇʀᴍᴀɪɴ ɪɴɪ ᴀᴛᴀᴜ ɪᴛᴜ :\n"
+
+            "• sɪʟᴀʜᴋᴀɴ ᴋᴇᴛɪᴋ /iai ᴀᴛᴀᴜ iniatauitu\n",
+            "ᴜɴᴛᴜᴋ ᴍᴇᴍᴜʟᴀɪ ɢᴀᴍᴇ sᴇᴛᴀʟᴀʜ ɪᴛᴜ ᴛᴇᴋᴀɴ ᴘɪʟʜᴀɴ ʏᴀɴɢ ɪɴɢɪɴ ᴋᴀᴍᴜ ᴘɪʟɪʜ",
+            "ᴍᴀɴᴀɢᴇ ʙʏ @onlybionn"
+           )
+      ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))	
 
 def c_truth(update: Update, ctx: CallbackContext) -> None:
 	"""Get a truth question."""
@@ -247,6 +296,9 @@ print("[Set-Up] Adding handlers..")
 dispatcher.add_handler(CommandHandler(('start', 'cmds'), c_start))
 dispatcher.add_handler(CommandHandler(('about'), c_about))
 dispatcher.add_handler(CommandHandler(('help'), c_help))
+dispatcher.add_handler(CommandHandler(('hpgp'), c_hpgp))
+dispatcher.add_handler(CommandHandler(('htod'), c_htod))
+dispatcher.add_handler(CommandHandler(('hiai'), c_hiai))
 dispatcher.add_handler(CommandHandler(('t', 'truth'), c_truth))
 dispatcher.add_handler(CommandHandler(('d', 'dare'), c_dare))
 dispatcher.add_handler(CommandHandler(('pgp',), c_never))
