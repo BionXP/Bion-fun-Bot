@@ -59,12 +59,12 @@ def c_start(update: Update, ctx: CallbackContext) -> None:
 	"""General info about the bot and command help."""
 	
 	text = (
-		"Hi! I'm a Conversational Games Bot\n",
-		">> List Of Games <<",
+		"Hi! Aku adalah Bion Fun Game Bot/n",
+		">> Daftar Permainan <<",
 		"• Truth or Dare (/truth, /dare)",
-		"• Never Have I Ever (/ever)",
+		"• Pernah Gak Pernah (/pgp)",
 		"• Would You Rather (/wyr)",
-		"• This Or That (/tot)",
+		"• Ini Atau Itu (/tot)",
 		"• Will You Press The Button (/wyp)\n",
 		"Add me to a group and use the commands to play with friends :)"
 	)
