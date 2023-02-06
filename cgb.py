@@ -65,7 +65,7 @@ def c_start(update: Update, ctx: CallbackContext) -> None:
 		"• Ini Atau Itu (/iai)",
 		"• Tekan (/help) Untuk Melihat Perintah Yang Tersedia\n",
 		"• Tekan (/about) Untuk Mengetahui Lebih Banyak Tentang Bot Ini\n"
-		"• Tambahkan Saya Ke group anda dan gunakan daftar perintah yang tersedia untuk bermain dengan teman anda,
+		"• Tambahkan Saya Ke group anda dan gunakan daftar perintah yang tersedia untuk bermain dengan teman anda",
 		"• Manage by @onlybionn"
 	)
 	ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))
@@ -78,17 +78,15 @@ def c_about(update: Update, ctx: CallbackContext) -> None:
 		"Bot game sederhana untuk Telegram agar",
 		"obrolan tetap aktif dan menyenangkan.",
 		"Tanggapan disimpan secara lokal dalam file .txt bot ini berjalan di PTB version 13.1",
-		
-		"─────Dev di dalam Bot",
-		"Dev :
-		"Bion: @onlybionn\n",
-		
+		"───── Dev di dalam Bot",
+		"Dev",:
+		"Bion:@onlybionn\n",
 		"contribution and special thanks/n:",
-		"• Rexa : @JustRex"
+		"• Rexa : @JustRex",
 		"• my friends"
 		"• Terimakasih untuk yang sudah menggunakan bot sederhana ini",
-		"─────Additional
-		"Jika ingin berkontribusi atau ingin menambahkan pertanyaan silahkan hubungi owner bot ini\n:",
+		"───── Additional",
+		"Jika ingin berkontribusi atau ingin menambahkan pertanyaan silahkan hubungi owner bot ini:/n",
 		
 		"@onlybionn"
 		─────
