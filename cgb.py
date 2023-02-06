@@ -56,20 +56,44 @@ dispatcher = updater.dispatcher
 
 ## Commands.
 def c_start(update: Update, ctx: CallbackContext) -> None:
-	"""General info about the bot and command help."""
-	
+	"""Info umum tentang bot dan perintah bantuan."""	
 	text = (
-		"*👋🏻 ʜᴇʟʟᴏ {}  adalah Fun Game Bot,Bot ini di buat sesimple mungkin agar mempermudah pemakian anda/n",
+		"*👋🏻 hallo {}  adalah Fun Game Bot,Bot ini di buat sesimple mungkin agar mempermudah pemakaian anda/n",
 		">> Daftar Permainan <<",
 		"• Truth or Dare (/truth, /dare)",
 		"• Pernah Gak Pernah (/pgp)",
-		"• Would You Rather (/wyr)",
-		"• Ini Atau Itu (/tot)",
-		"• Will You Press The Button (/wyp)\n",
+		"• Ini Atau Itu (/iai)",
+		"• Tekan (/help) Untuk Melihat Perintah Yang Tersedia\n",
+		"• Tekan (/about) Untuk Mengetahui Lebih Banyak Tentang Bot Ini\n"
 		"• Tambahkan Saya Ke group anda dan gunakan daftar perintah yang tersedia untuk bermain dengan teman anda"
 		"• Manage by @onlybionn
 	)
 	ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))
+	
+def c_about(update: Update, ctx: CallbackContext) -> None:
+	"""Info umum tentang bot dan perintah bantuan."""	
+	text = (
+		"About This Bot
+		"Bot game sederhana untuk Telegram agar
+		"obrolan tetap aktif dan menyenangkan."
+		"Tanggapan disimpan secara lokal dalam file .txt bot ini berjalan di PTB version 13.1"
+		
+		"─────Dev di dalam Bot"
+		"Dev :
+		"Bion: @onlybionn
+		
+		"contribution and special thanks:"
+		"• Rexa : @JustRex"
+		"• my friends"
+		"• Terimakasih untuk yang sudah menggunakan bot sederhana ini"
+		"─────Additional
+		"Jika ingin berkontribusi atau ingin menambahkan pertanyaan silahkan hubungi owner bot ini :"
+		
+		@onlybionn
+		─────
+	)
+	ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))
+	
 
 def c_truth(update: Update, ctx: CallbackContext) -> None:
 	"""Get a truth question."""
@@ -84,7 +108,7 @@ def c_dare(update: Update, ctx: CallbackContext) -> None:
 	ctx.bot.send_message(chat_id = update.effective_chat.id, text = response, parse_mode=ParseMode.MARKDOWN_V2)
 
 def c_never(update: Update, ctx: CallbackContext) -> None:
-	"""Get a never have I ever question."""
+	"""Pernah Gak Pernah"""
 	
 	response = f"*Never have I ever* {escape_markdown(choice(database['nhie']), 2)}" 
 	ctx.bot.send_message(chat_id = update.effective_chat.id, text = response, parse_mode=ParseMode.MARKDOWN_V2)
