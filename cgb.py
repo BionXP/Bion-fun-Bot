@@ -80,16 +80,14 @@ def c_about(update: Update, ctx: CallbackContext) -> None:
 		"Tanggapan disimpan secara lokal dalam file .txt bot ini berjalan di PTB version 13.1",
 		"───── Dev di dalam Bot",
 		"Dev",:
-		"Bion:@onlybionn\n",
-		"contribution and special thanks/n:",
-		"• Rexa : @JustRex",
+		"Bion": "@onlybion/n",
+		"contribution and special thanks:/n",
+		"• Rexa" :"@JustRex",
 		"• my friends"
 		"• Terimakasih untuk yang sudah menggunakan bot sederhana ini",
 		"───── Additional",
 		"Jika ingin berkontribusi atau ingin menambahkan pertanyaan silahkan hubungi owner bot ini:/n",
-		
 		"@onlybionn"
-		─────
 	)
 	ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))
 	
@@ -228,11 +226,11 @@ def q_buttons(update: Update, ctx: CallbackContext) -> None:
 ## Command Handler.
 print("[Set-Up] Adding handlers..")
 # -- Command Handler -- 
-dispatcher.add_handler(CommandHandler(('start', 'help', 'cmds'), c_start c_about))
+dispatcher.add_handler(CommandHandler(('start', 'help', 'cmds'), c_start))
 dispatcher.add_handler(CommandHandler(('t', 'truth'), c_truth))
 dispatcher.add_handler(CommandHandler(('d', 'dare'), c_dare))
-dispatcher.add_handler(CommandHandler(('pgp', 'pgp', 'pernah', 'gapernah'), c_never))
-dispatcher.add_handler(CommandHandler(('iai', 'iai', 'iai'), c_tot))
+dispatcher.add_handler(CommandHandler(('pgp',), c_never))
+dispatcher.add_handler(CommandHandler(('iai',), c_tot))
 dispatcher.add_handler(CommandHandler(('wyr', 'rather', 'wouldyourather'), c_wyr))
 dispatcher.add_handler(CommandHandler(('wyptb', 'button', 'wouldyoupressthebutton', 'wyp'), c_wyptb))
 # -- Callback Query Handler --
