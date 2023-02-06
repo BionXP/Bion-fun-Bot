@@ -59,7 +59,7 @@ def c_start(update: Update, ctx: CallbackContext) -> None:
 	"""General info about the bot and command help."""
 	
 	text = (
-		"Hi! Aku adalah Bion Fun Game Bot/n",
+		"*👋🏻 ʜᴇʟʟᴏ {}  adalah Bion Fun Game Bot/n",
 		">> Daftar Permainan <<",
 		"• Truth or Dare (/truth, /dare)",
 		"• Pernah Gak Pernah (/pgp)",
@@ -204,11 +204,11 @@ def q_buttons(update: Update, ctx: CallbackContext) -> None:
 ## Command Handler.
 print("[Set-Up] Adding handlers..")
 # -- Command Handler -- 
-dispatcher.add_handler(CommandHandler(('start', 'help', 'cmds'), c_start))
+dispatcher.add_handler(CommandHandler(('start', 'help', 'cmds'), c_start c_about))
 dispatcher.add_handler(CommandHandler(('t', 'truth'), c_truth))
 dispatcher.add_handler(CommandHandler(('d', 'dare'), c_dare))
-dispatcher.add_handler(CommandHandler(('neverhaveiever', 'nhie', 'ever', 'never'), c_never))
-dispatcher.add_handler(CommandHandler(('thisorthat', 'tot', 'tt'), c_tot))
+dispatcher.add_handler(CommandHandler(('pgp', 'pgp', 'pernah', 'gapernah'), c_never))
+dispatcher.add_handler(CommandHandler(('iai', 'iai', 'iai'), c_tot))
 dispatcher.add_handler(CommandHandler(('wyr', 'rather', 'wouldyourather'), c_wyr))
 dispatcher.add_handler(CommandHandler(('wyptb', 'button', 'wouldyoupressthebutton', 'wyp'), c_wyptb))
 # -- Callback Query Handler --
