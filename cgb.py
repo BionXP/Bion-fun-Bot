@@ -131,7 +131,7 @@ def c_htod(update: Update, ctx: CallbackContext) -> None:
 """General info about the bot and command help."""
 
 text = (
-         "❓ ᴄᴀʀᴀ ʙᴇʀᴍᴀɪɴ ᴛʀᴜᴛʜ ᴏʀ ᴅᴀʀᴇ sᴀᴍᴀ sᴇᴘᴇʀᴛɪ ᴛᴏᴅ ʟᴀɪɴɴʏᴀ",
+         "❓ ᴄᴀʀᴀ ʙᴇʀᴍᴀɪɴ ᴛʀᴜᴛʜ ᴏʀ ᴅᴀʀᴇ sᴀᴍᴀ sᴇᴘᴇʀᴛɪ ᴛᴏᴅ ʟᴀɪɴɴʏᴀ\n",
             "•ᴛʀᴜᴛʜ/ᴋᴇᴊᴜᴊᴜʀᴀɴ",
                " ᴅᴇɴɢᴀɴ ᴍᴇɴɢᴇᴛɪᴋ: /truth\n",
               "•ᴅᴀʀᴇ/ᴛᴀɴᴛᴀnɢᴀɴ",
