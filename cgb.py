@@ -80,16 +80,16 @@ def c_about(update: Update, ctx: CallbackContext) -> None:
 		
 		"─────Dev di dalam Bot",
 		"Dev :
-		"Bion: @onlybionn
+		"Bion: @onlybionn\n",
 		
-		"contribution and special thanks:",
+		"contribution and special thanks/n:",
 		"• Rexa : @JustRex"
 		"• my friends"
 		"• Terimakasih untuk yang sudah menggunakan bot sederhana ini",
 		"─────Additional
-		"Jika ingin berkontribusi atau ingin menambahkan pertanyaan silahkan hubungi owner bot ini :",
+		"Jika ingin berkontribusi atau ingin menambahkan pertanyaan silahkan hubungi owner bot ini\n:",
 		
-		@onlybionn
+		"@onlybionn"
 		─────
 	)
 	ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))
