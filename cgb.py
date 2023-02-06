@@ -58,20 +58,21 @@ dispatcher = updater.dispatcher
 def c_start(update: Update, ctx: CallbackContext) -> None:
 	"""Info umum tentang bot dan perintah bantuan."""	
 	text = (
-		"*👋🏻 hallo {}  adalah Fun Game Bot,Bot ini di buat sesimple mungkin agar mempermudah pemakaian anda/n",
+		"*👋🏻 hallo ini adalah Fun Game Bot,Bot ini di buat sesimple mungkin agar mempermudah pemakaian anda/n",
 		">> Daftar Permainan <<",
 		"• Truth or Dare (/truth, /dare)",
 		"• Pernah Gak Pernah (/pgp)",
 		"• Ini Atau Itu (/iai)",
 		"• Tekan (/help) Untuk Melihat Perintah Yang Tersedia\n",
 		"• Tekan (/about) Untuk Mengetahui Lebih Banyak Tentang Bot Ini\n"
-		"• Tambahkan Saya Ke group anda dan gunakan daftar perintah yang tersedia untuk bermain dengan teman anda"
-		"• Manage by @onlybionn
+		"• Tambahkan Saya Ke group anda dan gunakan daftar perintah yang tersedia untuk bermain dengan teman anda,
+		"• Manage by @onlybionn"
 	)
 	ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))
 	
+## About.	
 def c_about(update: Update, ctx: CallbackContext) -> None:
-	"""Info umum tentang bot dan perintah bantuan."""	
+		
 	text = (
 		"About This Bot",
 		"Bot game sederhana untuk Telegram agar",
