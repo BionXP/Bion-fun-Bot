@@ -97,13 +97,13 @@ def c_help(update: Update, ctx: CallbackContext) -> None:
 	text = (
 		"Silahkan pilih game yang ingin kamu ketahui cara bermainnya:",
 		"• ** TRUTH OR DARE **",
-		"Tekan -> /htod",
+		"Tekan ➡️ /htod",
 		"Untuk mengetahui cara bermain truth or dare",
 		"• ** PERNAH GAK PERNAH **",
-		"Tekan -> /hpgp",
+		"Tekan ➡️ /hpgp",
 		"Untuk mengetahui cara bermain pernah ga pernah",
 		"• ** INI ATAU ITU **",
-		"Tekan -> /hiai",
+		"Tekan ➡️ /hiai",
 		"Untuk mengetahui cara bermain ini atau itu"
 		"manage by @onlybionn",
 	)
@@ -221,7 +221,7 @@ def q_buttons(update: Update, ctx: CallbackContext) -> None:
 			ctx.chat_data[msg_id]['message'] = markdown_msg
 			
 	if (user in ctx.chat_data[msg_id]['users_red']) or (user in ctx.chat_data[msg_id]['users_blue']):
-		query.answer(text = "You already picked an option.", show_alert = True)
+		query.answer(text = "Anda sudah memilih opsi.", show_alert = True)
 		return
 	else:
 		if t_choice == 'red':
@@ -232,7 +232,7 @@ def q_buttons(update: Update, ctx: CallbackContext) -> None:
 
 	final_message = ctx.chat_data[msg_id]['message'].copy()
 	if ctx.chat_data[msg_id]['users_red'] or ctx.chat_data[msg_id]['users_blue']:
-		final_message.append("\n*Choices*")
+		final_message.append("\n*orang yang sudah memilih :*")
 		# to-do: change how choices are stored, so that order is preserved
 		for m_user in ctx.chat_data[msg_id]['users_red']:
 			final_message.append(f"🔴 {m_user}")
@@ -244,8 +244,9 @@ def q_buttons(update: Update, ctx: CallbackContext) -> None:
 ## Command Handler.
 print("[Set-Up] Adding handlers..")
 # -- Command Handler -- 
-dispatcher.add_handler(CommandHandler(('start', 'help', 'cmds'), c_start))
+dispatcher.add_handler(CommandHandler(('start', 'cmds'), c_start))
 dispatcher.add_handler(CommandHandler(('about'), c_about))
+dispatcher.add_handler(CommandHandler(('help'), c_help))
 dispatcher.add_handler(CommandHandler(('t', 'truth'), c_truth))
 dispatcher.add_handler(CommandHandler(('d', 'dare'), c_dare))
 dispatcher.add_handler(CommandHandler(('pgp',), c_never))
