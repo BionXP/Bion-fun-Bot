@@ -59,14 +59,15 @@ def c_start(update: Update, ctx: CallbackContext) -> None:
 	"""General info about the bot and command help."""
 	
 	text = (
-		"*👋🏻 ʜᴇʟʟᴏ {}  adalah Bion Fun Game Bot/n",
+		"*👋🏻 ʜᴇʟʟᴏ {}  adalah Fun Game Bot,Bot ini di buat sesimple mungkin agar mempermudah pemakian anda/n",
 		">> Daftar Permainan <<",
 		"• Truth or Dare (/truth, /dare)",
 		"• Pernah Gak Pernah (/pgp)",
 		"• Would You Rather (/wyr)",
 		"• Ini Atau Itu (/tot)",
 		"• Will You Press The Button (/wyp)\n",
-		"Add me to a group and use the commands to play with friends :)"
+		"• Tambahkan Saya Ke group anda dan gunakan daftar perintah yang tersedia untuk bermain dengan teman anda"
+		"• Manage by @onlybionn
 	)
 	ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))
 
