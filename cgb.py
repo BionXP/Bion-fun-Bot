@@ -73,21 +73,21 @@ def c_start(update: Update, ctx: CallbackContext) -> None:
 def c_about(update: Update, ctx: CallbackContext) -> None:
 	"""Info umum tentang bot dan perintah bantuan."""	
 	text = (
-		"About This Bot
-		"Bot game sederhana untuk Telegram agar
-		"obrolan tetap aktif dan menyenangkan."
-		"Tanggapan disimpan secara lokal dalam file .txt bot ini berjalan di PTB version 13.1"
+		"About This Bot",
+		"Bot game sederhana untuk Telegram agar",
+		"obrolan tetap aktif dan menyenangkan.",
+		"Tanggapan disimpan secara lokal dalam file .txt bot ini berjalan di PTB version 13.1",
 		
-		"─────Dev di dalam Bot"
+		"─────Dev di dalam Bot",
 		"Dev :
 		"Bion: @onlybionn
 		
-		"contribution and special thanks:"
+		"contribution and special thanks:",
 		"• Rexa : @JustRex"
 		"• my friends"
-		"• Terimakasih untuk yang sudah menggunakan bot sederhana ini"
+		"• Terimakasih untuk yang sudah menggunakan bot sederhana ini",
 		"─────Additional
-		"Jika ingin berkontribusi atau ingin menambahkan pertanyaan silahkan hubungi owner bot ini :"
+		"Jika ingin berkontribusi atau ingin menambahkan pertanyaan silahkan hubungi owner bot ini :",
 		
 		@onlybionn
 		─────
