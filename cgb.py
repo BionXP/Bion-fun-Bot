@@ -80,7 +80,7 @@ def c_about(update: Update, ctx: CallbackContext) -> None:
 		"Tanggapan disimpan secara lokal dalam file .txt bot ini berjalan di PTB version 13.1",
 		"───── Dev di dalam Bot",
 		"Dev",:
-		"Bion": "@onlybion/n",
+		"Bion: "@onlybion/n",
 		"contribution and special thanks:/n",
 		"• Rexa" :"@JustRex",
 		"• my friends"
