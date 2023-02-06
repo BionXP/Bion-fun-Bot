@@ -1,1 +1,1 @@
-python3 -m cgb.py
+worker : python3 cgb.py
