@@ -56,106 +56,104 @@ dispatcher = updater.dispatcher
 
 ## Commands.
 def c_start(update: Update, ctx: CallbackContext) -> None:
-	"""Info umum tentang bot dan perintah bantuan."""	
-	text = (
-		"*👋🏻 hallo ini adalah Fun Game Bot,Bot ini di buat sesimple mungkin agar mempermudah pemakaian anda\n",
-		">> Daftar Permainan <<",
-		"• Truth or Dare (/truth, /dare)",
-		"• Pernah Gak Pernah (/pgp)",
-		"• Ini Atau Itu (/iai)",
-		"• Tekan (/help) Untuk Melihat Perintah Yang Tersedia\n",
-		"• Tekan (/about) Untuk Mengetahui Lebih Banyak Tentang Bot Ini\n"
-		"• Tambahkan Saya Ke group anda dan gunakan daftar perintah yang tersedia untuk bermain dengan teman anda",
-		"• Manage by @onlybionn"
-	)
-	ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))
+	"""Info umum tentang bot dan perintah bantuan."""
+    text = (
+        "*👋🏻 hallo ini adalah Fun Game Bot,Bot ini di buat sesimple mungkin agar mempermudah pemakaian anda\n",
+        ">> Daftar Permainan <<",
+        "• Truth or Dare (/truth, /dare)",
+        "• Pernah Gak Pernah (/pgp)",
+        "• Ini Atau Itu (/iai)",
+        "• Tekan (/help) Untuk Melihat Perintah Yang Tersedia\n",
+        "• Tekan (/about) Untuk Mengetahui Lebih Banyak Tentang Bot Ini\n"
+        "• Tambahkan Saya Ke group anda dan gunakan daftar perintah yang tersedia untuk bermain dengan teman anda",
+        "• Manage by @onlybionn"
+    )
+    ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))
 	
 ## About.	
 def c_about(update: Update, ctx: CallbackContext) -> None:
 		
-	text = (
-		"About This Bot",
-		"Bot game sederhana untuk Telegram agar",
-		"obrolan tetap aktif dan menyenangkan.",
-		"Tanggapan disimpan secara lokal dalam file .txt bot ini berjalan di PTB version 13.1",
-		"───── Dev di dalam Bot",
-		"Dev: ",
-		"Bion: @onlybion\n",
-		"contribution and special thanks:\n",
-		"• Rexa" :"@JustRex",
-		"• my friends"
-		"• Terimakasih untuk yang sudah menggunakan bot sederhana ini",
-		"───── Additional",
-		"Jika ingin berkontribusi atau ingin menambahkan pertanyaan silahkan hubungi owner bot ini:\n",
-		"@onlybionn"
-	)
-	ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))
+    text = (
+        "About This Bot",
+        "Bot game sederhana untuk Telegram agar",
+        "obrolan tetap aktif dan menyenangkan.",
+	"Tanggapan disimpan secara lokal dalam file .txt bot ini berjalan di PTB version 13.1",
+	"───── Dev di dalam Bot",
+	"Dev: ",
+	"Bion: @onlybion\n",
+	"contribution and special thanks:\n",
+	"• Rexa" :"@JustRex",
+	"• my friends"
+	"• Terimakasih untuk yang sudah menggunakan bot sederhana ini",
+	"───── Additional",
+	"Jika ingin berkontribusi atau ingin menambahkan pertanyaan silahkan hubungi owner bot ini:\n",
+	"@onlybionn"
+    )
+    ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))
 	
 ## Help.	
 def c_help(update: Update, ctx: CallbackContext) -> None:
 		
-	text = (
-		"Silahkan pilih game yang ingin kamu ketahui cara bermainnya:",
-		"• ** TRUTH OR DARE **",
-		"Tekan ➡️ /htod",
-		"Untuk mengetahui cara bermain truth or dare",
-		"• ** PERNAH GAK PERNAH **",
-		"Tekan ➡️ /hpgp",
-		"Untuk mengetahui cara bermain pernah ga pernah",
-		"• ** INI ATAU ITU **",
-		"Tekan ➡️ /hiai",
-		"Untuk mengetahui cara bermain ini atau itu"
-		"manage by @onlybionn",
-	)
-	ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))	
+    text = (
+        "Silahkan pilih game yang ingin kamu ketahui cara bermainnya:",
+	"• ** TRUTH OR DARE **",
+	"Tekan ➡️ /htod",
+	"Untuk mengetahui cara bermain truth or dare",
+	"• ** PERNAH GAK PERNAH **",
+	"Tekan ➡️ /hpgp",
+	"Untuk mengetahui cara bermain pernah ga pernah",
+	"• ** INI ATAU ITU **",
+	"Tekan ➡️ /hiai",
+	"Untuk mengetahui cara bermain ini atau itu"
+	"manage by @onlybionn",
+    )
+    ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))	
 
 ## HELP PERNAH GA PERNAH
 def c_hpgp(update: Update, ctx: CallbackContext) -> None:
  """General info about the bot and command help."""
  
- text = (
-         "❓ ᴄᴀʀᴀ ʙᴇʀᴍᴀɪɴ ᴘᴇʀɴᴀʜ ɢᴀ ᴘᴇʀɴᴀʜ",
-            "ɢᴀᴍᴇ ɪɴɪ ʜᴀᴍᴘɪʀ ᴍɪʀɪᴘ sᴇᴘᴇʀᴛɪ ᴛʀᴜᴛʜ ᴏʀ ᴅᴀʀᴇ",
-            "ᴋᴀᴍᴜ ʜᴀɴʏᴀ ᴅɪ ᴍɪɴᴛᴀ ᴜɴᴛᴜᴋ ᴍᴇɴᴊᴀᴡᴀʙ ᴘᴇʀɴᴀʜ ᴀᴛᴀᴜ ɢᴀᴋ ᴘᴇʀɴᴀʜ",
-            "ᴋᴀᴍᴜ ʙɪsᴀ ᴍᴇᴍᴀɪɴᴋᴀɴ ɢᴀᴍᴇɴʏᴀ ᴅᴇɴɢᴀɴ ᴍᴇɴɢᴇᴛɪᴋ :\n"
-            "➡️ /pgp\n",
-            "ʙᴇʀᴍᴀɪɴ ʙᴇʀsᴀᴍᴀ ᴛᴇᴍᴀɴ / ᴘᴀsᴀɴɢᴀɴ ʟᴇʙɪʜ ᴀsɪᴋ ᴅɪ ɢᴀᴍᴇ ɪɴɪ ᴇɴᴊᴏʏ",
-            "ᴍᴀɴᴀɢᴇ ʙʏ @onlybionn"
-           )
-      ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))
+    text = (
+        "❓ ᴄᴀʀᴀ ʙᴇʀᴍᴀɪɴ ᴘᴇʀɴᴀʜ ɢᴀ ᴘᴇʀɴᴀʜ",
+        "ɢᴀᴍᴇ ɪɴɪ ʜᴀᴍᴘɪʀ ᴍɪʀɪᴘ sᴇᴘᴇʀᴛɪ ᴛʀᴜᴛʜ ᴏʀ ᴅᴀʀᴇ",
+        "ᴋᴀᴍᴜ ʜᴀɴʏᴀ ᴅɪ ᴍɪɴᴛᴀ ᴜɴᴛᴜᴋ ᴍᴇɴᴊᴀᴡᴀʙ ᴘᴇʀɴᴀʜ ᴀᴛᴀᴜ ɢᴀᴋ ᴘᴇʀɴᴀʜ",
+        "ᴋᴀᴍᴜ ʙɪsᴀ ᴍᴇᴍᴀɪɴᴋᴀɴ ɢᴀᴍᴇɴʏᴀ ᴅᴇɴɢᴀɴ ᴍᴇɴɢᴇᴛɪᴋ :\n"
+        "➡️ /pgp\n",
+        "ʙᴇʀᴍᴀɪɴ ʙᴇʀsᴀᴍᴀ ᴛᴇᴍᴀɴ / ᴘᴀsᴀɴɢᴀɴ ʟᴇʙɪʜ ᴀsɪᴋ ᴅɪ ɢᴀᴍᴇ ɪɴɪ ᴇɴᴊᴏʏ",
+        "ᴍᴀɴᴀɢᴇ ʙʏ @onlybionn"
+    )
+    ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))
 	
 ## HELP TOD
 def c_htod(update: Update, ctx: CallbackContext) -> None:
 """General info about the bot and command help."""
 
-text = (
-         "❓ ᴄᴀʀᴀ ʙᴇʀᴍᴀɪɴ ᴛʀᴜᴛʜ ᴏʀ ᴅᴀʀᴇ sᴀᴍᴀ sᴇᴘᴇʀᴛɪ ᴛᴏᴅ ʟᴀɪɴɴʏᴀ",
-            "•ᴛʀᴜᴛʜ/ᴋᴇᴊᴜᴊᴜʀᴀɴ",
-               " ᴅᴇɴɢᴀɴ ᴍᴇɴɢᴇᴛɪᴋ: /truth\n",
-              "•ᴅᴀʀᴇ/ᴛᴀɴᴛᴀnɢᴀɴ",
-               " ᴅᴇɴɢᴀɴ ᴍᴇɴɢᴇᴛɪᴋ: /dare\n",
-            "ᴋᴀᴍᴜ ʙɪsᴀ ᴍᴇᴍᴀɪɴᴋᴀɴ ɢᴀᴍᴇɴʏᴀ ᴅᴇɴɢᴀɴ ᴍᴇɴɢᴇᴛɪᴋ :\n"
-            "ʙᴇʀᴍᴀɪɴ ʙᴇʀsᴀᴍᴀ ᴛᴇᴍᴀɴ / ᴘᴀsᴀɴɢᴀɴ ʟᴇʙɪʜ ᴀsɪᴋ ᴅɪ ɢᴀᴍᴇ ɪɴɪ ᴇɴᴊᴏʏ",
-            "ᴍᴀɴᴀɢᴇ ʙʏ @onlybionn"
-           )
-      ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))
+    text = (
+        "❓ ᴄᴀʀᴀ ʙᴇʀᴍᴀɪɴ ᴛʀᴜᴛʜ ᴏʀ ᴅᴀʀᴇ sᴀᴍᴀ sᴇᴘᴇʀᴛɪ ᴛᴏᴅ ʟᴀɪɴɴʏᴀ",
+        "•ᴛʀᴜᴛʜ/ᴋᴇᴊᴜᴊᴜʀᴀɴ",
+        " ᴅᴇɴɢᴀɴ ᴍᴇɴɢᴇᴛɪᴋ: /truth\n",
+        "•ᴅᴀʀᴇ/ᴛᴀɴᴛᴀnɢᴀɴ",
+        " ᴅᴇɴɢᴀɴ ᴍᴇɴɢᴇᴛɪᴋ: /dare\n",
+        "ᴋᴀᴍᴜ ʙɪsᴀ ᴍᴇᴍᴀɪɴᴋᴀɴ ɢᴀᴍᴇɴʏᴀ ᴅᴇɴɢᴀɴ ᴍᴇɴɢᴇᴛɪᴋ :\n"
+        "ʙᴇʀᴍᴀɪɴ ʙᴇʀsᴀᴍᴀ ᴛᴇᴍᴀɴ / ᴘᴀsᴀɴɢᴀɴ ʟᴇʙɪʜ ᴀsɪᴋ ᴅɪ ɢᴀᴍᴇ ɪɴɪ ᴇɴᴊᴏʏ",
+        "ᴍᴀɴᴀɢᴇ ʙʏ @onlybionn"
+    )
+    ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))
 	
 ## HELP INI ATAU ITU
 def c_hiai(update: Update, ctx: CallbackContext) -> None:
  """General info about the bot and command help."""
  
- text = (
-         "ɢᴀᴍᴇ ɪɴɪ ᴀᴛᴀᴜ ɪᴛᴜ ᴀᴅᴀʟᴀʜ sᴇʙᴜᴀʜ ɢᴀᴍᴇ ʏᴀɴɢ ᴅɪ ᴍᴀɪɴᴋᴀɴ ᴅᴜᴀ ᴀᴛᴀᴜ ʟᴇʙɪʜ",
-            "ᴘᴇᴍᴀɪɴ ʜᴀʀᴜs ᴍᴇᴍɪʟɪʜ ᴅᴜᴀ ᴏᴘsɪ ʏᴀɴɢ ᴅᴜ ʙᴇʀɪᴋᴀɴ ",
-            "ᴅᴀɴ ᴘᴇᴍᴀɪɴ  ʟᴀɪɴ ʜᴀʀᴜs ᴍᴇɴᴇʙᴀᴋ ᴘɪʟɪʜᴀɴ ʏᴀɴɢ ᴅɪ ᴘɪʟɪʜ.sᴇʟᴀɪɴ ɪᴛᴜ ᴀᴅᴀ ʙᴀɴʏᴀᴋ ᴄᴀʀᴀ ᴜɴᴛᴜᴋ ᴍᴇᴍᴀɪɴᴋᴀɴ ɢᴀᴍᴇ ɪɴɪ ᴀᴛᴀᴜ ɪᴛᴜ",
-
-            "ᴄᴀʀᴀ ʙᴇʀᴍᴀɪɴ ɪɴɪ ᴀᴛᴀᴜ ɪᴛᴜ :\n"
-
-            "• sɪʟᴀʜᴋᴀɴ ᴋᴇᴛɪᴋ /iai ᴀᴛᴀᴜ iniatauitu\n",
-            "ᴜɴᴛᴜᴋ ᴍᴇᴍᴜʟᴀɪ ɢᴀᴍᴇ sᴇᴛᴀʟᴀʜ ɪᴛᴜ ᴛᴇᴋᴀɴ ᴘɪʟʜᴀɴ ʏᴀɴɢ ɪɴɢɪɴ ᴋᴀᴍᴜ ᴘɪʟɪʜ",
-            "ᴍᴀɴᴀɢᴇ ʙʏ @onlybionn"
-           )
-      ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))	
+    text = (
+        "ɢᴀᴍᴇ ɪɴɪ ᴀᴛᴀᴜ ɪᴛᴜ ᴀᴅᴀʟᴀʜ sᴇʙᴜᴀʜ ɢᴀᴍᴇ ʏᴀɴɢ ᴅɪ ᴍᴀɪɴᴋᴀɴ ᴅᴜᴀ ᴀᴛᴀᴜ ʟᴇʙɪʜ",
+        "ᴘᴇᴍᴀɪɴ ʜᴀʀᴜs ᴍᴇᴍɪʟɪʜ ᴅᴜᴀ ᴏᴘsɪ ʏᴀɴɢ ᴅᴜ ʙᴇʀɪᴋᴀɴ ",
+        "ᴅᴀɴ ᴘᴇᴍᴀɪɴ  ʟᴀɪɴ ʜᴀʀᴜs ᴍᴇɴᴇʙᴀᴋ ᴘɪʟɪʜᴀɴ ʏᴀɴɢ ᴅɪ ᴘɪʟɪʜ.sᴇʟᴀɪɴ ɪᴛᴜ ᴀᴅᴀ ʙᴀɴʏᴀᴋ ᴄᴀʀᴀ ᴜɴᴛᴜᴋ ᴍᴇᴍᴀɪɴᴋᴀɴ ɢᴀᴍᴇ ɪɴɪ ᴀᴛᴀᴜ ɪᴛᴜ",
+        "ᴄᴀʀᴀ ʙᴇʀᴍᴀɪɴ ɪɴɪ ᴀᴛᴀᴜ ɪᴛᴜ :\n"
+        "• sɪʟᴀʜᴋᴀɴ ᴋᴇᴛɪᴋ /iai ᴀᴛᴀᴜ iniatauitu\n",
+        "ᴜɴᴛᴜᴋ ᴍᴇᴍᴜʟᴀɪ ɢᴀᴍᴇ sᴇᴛᴀʟᴀʜ ɪᴛᴜ ᴛᴇᴋᴀɴ ᴘɪʟʜᴀɴ ʏᴀɴɢ ɪɴɢɪɴ ᴋᴀᴍᴜ ᴘɪʟɪʜ",
+        "ᴍᴀɴᴀɢᴇ ʙʏ @onlybionn"
+    )
+    ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))	
 
 def c_truth(update: Update, ctx: CallbackContext) -> None:
 	"""Get a truth question."""
