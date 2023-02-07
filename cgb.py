@@ -67,8 +67,8 @@ def c_start(update: Update, ctx: CallbackContext) -> None:
                 "• Tekan (/about) Untuk Mengetahui Lebih Banyak Tentang Bot Ini\n"
                 "• Tambahkan Saya Ke group anda dan gunakan daftar perintah yang tersedia untuk bermain dengan teman anda",
                 "• Manage by @onlybionn"
-        )
-        ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))
+	)
+	ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))
 	
 ## About.	
 def c_about(update: Update, ctx: CallbackContext) -> None:
