@@ -37,8 +37,8 @@ print("1.0.0 | Release | By Bion", '\n')
 def parse_list_file(file_path: str) -> list:
         """Parse a text file into a list containing each line."""
 	
-	with open(file_path) as f:
-		return [l.strip() for l in f.readlines() if l.strip()]
+with open(file_path) as f:
+return [l.strip() for l in f.readlines() if l.strip()]
 
 print("[Loading] Loading responses...")
 # Open all the text files and load them into list variables in a dictionary.
