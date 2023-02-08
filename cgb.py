@@ -58,7 +58,7 @@ dispatcher = updater.dispatcher
 def c_start(update: Update, ctx: CallbackContext) -> None:
 	"""General info about the bot and command help."""
         text = (
-            "*👋🏻 hallo ini adalah Fun Game Bot,Bot ini di buat sesimple mungkin agar mempermudah pemakaian anda\n",
+        "*👋🏻 hallo ini adalah Fun Game Bot,Bot ini di buat sesimple mungkin agar mempermudah pemakaian anda\n",
             ">> Daftar Permainan <<",
             "• Truth or Dare (/truth, /dare)",
             "• Pernah Gak Pernah (/pgp)",
