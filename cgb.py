@@ -86,7 +86,7 @@ def c_help(update: Update, ctx: CallbackContext) -> None:
             "• INI ATAU ITU",
             "ᴛᴇᴋᴀɴ ➡️ /hiai",
             "ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇᴛᴀʜᴜɪ ᴄᴀʀᴀ ʙᴇʀᴍᴀɪɴ ɪɴɪ ᴀᴛᴀᴜ ɪᴛᴜ\n",
-            "ᴍᴀɴᴀɢᴇ ʙʏ @JustRex"
+            "ᴍᴀɴᴀɢᴇ ʙʏ @onlybionn"
         )
 	ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))
 
@@ -105,7 +105,7 @@ def c_htod(update: Update, ctx: CallbackContext) -> None:
             "ᴅᴇɴɢᴀɴ ᴍᴇɴɢᴇᴛɪᴋ :",
             "/dare",
             "ʙᴇʀᴍᴀɪɴ ʙᴇʀsᴀᴍᴀ ᴛᴇᴍᴀɴ / ᴘᴀsᴀɴɢᴀɴ ʟᴇʙɪʜ ᴀsɪᴋ ᴅɪ ɢᴀᴍᴇ ɪɴɪ ᴇɴᴊᴏʏ",
-            "ᴍᴀɴᴀɢᴇ ʙʏ @ᴊᴜsᴛʀᴇx"
+            "ᴍᴀɴᴀɢᴇ ʙʏ @onlybionn"
         )
 	ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))
 
@@ -120,7 +120,7 @@ def c_hpgp(update: Update, ctx: CallbackContext) -> None:
             "ᴋᴀᴍᴜ ʙɪsᴀ ᴍᴇᴍᴀɪɴᴋᴀɴ ɢᴀᴍᴇɴʏᴀ ᴅᴇɴɢᴀɴ ᴍᴇɴɢᴇᴛɪᴋ :\n"
             "➡️ /pgp\n",
             "ʙᴇʀᴍᴀɪɴ ʙᴇʀsᴀᴍᴀ ᴛᴇᴍᴀɴ / ᴘᴀsᴀɴɢᴀɴ ʟᴇʙɪʜ ᴀsɪᴋ ᴅɪ ɢᴀᴍᴇ ɪɴɪ ᴇɴᴊᴏʏ",
-            "ᴍᴀɴᴀɢᴇ ʙʏ @ᴊᴜsᴛʀᴇx"
+            "ᴍᴀɴᴀɢᴇ ʙʏ @onlybionn"
         )
 	ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))
 
@@ -147,15 +147,14 @@ def c_about(update: Update, ctx: CallbackContext) -> None:
             "Bot ini berjalan di PTB version 13.1\n",
             "━━━ ᴅᴇᴠ ɪɴ ᴛʜɪs ʙᴏᴛ 👑",
             "👨‍💻 ᴅᴇᴠ:",
-            "• ʀᴇxʌ : @JustRex\n",
+            "• ʙɪᴏɴ : @onlybionn\n",
             "👥 ᴄᴏɴᴛʀɪʙᴜᴛɪᴏɴ ᴀɴᴅ sᴘᴇᴄɪᴀʟ ᴛʜᴀɴᴋs :",
-            "• bion : @onlybionn",
-            "• ᴍʏ ᴘᴀʀᴇɴᴛs",
-            "• sᴇᴄʀᴇᴛ ɢɪʀʟ ♥️ ( ᴡʜᴏ ɪɴsᴘɪʀᴇᴅ ᴍᴇ ᴛᴏ ᴍᴀᴋᴇ ᴛʜɪs ʙᴏᴛ)",
+            "• Rexa : @JustRex",
+            "• ᴍʏ ғʀɪᴇɴᴅ",
             " ᴛᴇʀɪᴍᴀᴋᴀsɪʜ ᴜɴᴛᴜᴋ ʏᴀɴɢ sᴜᴅᴀʜ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ʙᴏᴛ sᴇᴅᴇʀʜᴀɴᴀ ɪɴɪ\n"
             "━━━ ᴀᴅᴅɪᴛɪᴏɴᴀʟ👇🏻", 
             "ᴊɪᴋᴀ ɪɴɢɪɴ ʙᴇʀᴋᴏɴᴛʀɪʙᴜsɪ ᴀᴛᴀᴜ ɪɴɢɪɴ ᴍᴇɴᴀᴍʙᴀʜᴋᴀɴ ᴘᴇʀᴛᴀɴʏᴀᴀɴ sɪʟᴀʜᴋᴀɴ ʜᴜʙᴜɴɢɪ ᴏᴡɴᴇʀ ʙᴏᴛ ɪɴɪ :\n",
-            "👨‍💻 @JustRex",
+            "👨‍💻 @onlybionn",
         )
 	ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))
 # HANDLER GAME        
@@ -310,5 +309,5 @@ dispatcher.add_handler(CallbackQueryHandler(q_buttons))
 
 ## Polling / Login.
 updater.start_polling()
-print("[Ready] Bot is ready. Started rexa bot game.")
+print("[Ready] Bot is ready. Started Bion bot game.")
 updater.idle()
