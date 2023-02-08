@@ -29,9 +29,9 @@ RED_BLUE_KEYBOARD = InlineKeyboardMarkup([[
 
 ## Info.
 print("=" * 25)
-print("Rexa Games Bot")
+print("Bion Games Bot")
 print("=" * 25)
-print("1.0.0 | Release | By @JustRex", '\n')
+print("1.0.0 | Release | By @onlybionn", '\n')
 
 ## Functions.
 def parse_list_file(file_path: str) -> list:
@@ -67,7 +67,7 @@ def c_start(update: Update, ctx: CallbackContext) -> None:
             "• ᴛᴇᴋᴀɴ /help ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇᴛᴀʜᴜɪ ᴘᴀɴᴅᴜᴀɴ ᴄᴀʀᴀ ʙᴇʀᴍᴀɪɴ",
             "• ᴛᴇᴋᴀɴ /about ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇᴛᴀʜᴜɪ ʟᴇʙɪʜ ʙᴀɴʏᴀᴋ ᴛᴇɴᴛᴀɴɢ ʙᴏᴛ ɪɴɪ",
             "━━━━━━━━━━━━━━━━━━━\n",
-            "👨‍💻 ᴍᴀɴᴀɢᴇ ʙʏ @JustRex."
+            "👨‍💻 ᴍᴀɴᴀɢᴇ ʙʏ @onlybionn."
         )
 	ctx.bot.send_message(chat_id = update.effective_chat.id, text = '\n'.join(text))
 
